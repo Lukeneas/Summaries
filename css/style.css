@@ -3,8 +3,7 @@ body {
   align-content: start;
   gap: 20px;
   padding: 20px 0px;
-  height: 200vh;
-  /* background: black; */
+  height: 300vh;
 }
 h1 {
   font-size: 3rem;
@@ -12,18 +11,17 @@ h1 {
   color: #1b4c57;
   grid-column: 1/3;
   cursor: pointer;
+  text-align: center;
 }
 h2 {
   font-size: 1.4rem;
   color: #43bbd5;
   background: white;
-  padding: 10px 20px;
+  padding: 20px;
   border-radius: 5px 5px 0px 0px;
   cursor: pointer;
   border: 2px #1b4c57 solid;
-}
-dd {
-  display: inline-block;
+  text-align: center;
 }
 .big-container {
   display: grid;
@@ -32,7 +30,7 @@ dd {
   gap: 10px;
   padding: 20px;
   margin: 0 auto;
-  width: 60vw;
+  width: 90vw;
   border-radius: 5px;
   box-sizing: border-box;
   background: linear-gradient(
@@ -63,32 +61,39 @@ dd {
   }
 }
 
-.container {
+.big-container .container {
   background-color: #1b4c57;
   color: rgb(228, 228, 228);
-  padding: 20px 40px;
   border-radius: 0px 0px 5px 5px;
-  width: max-content;
   max-height: 400px;
-  width: 20vw;
   overflow-y: scroll;
-  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
 }
-.variavel {
+.container .variavel {
   color: #43bbd5;
   font-size: 1.2rem;
+  margin-left: 10px;
+  margin: 15px;
 }
-.variavel.obs {
+.container .variavel.obs {
   color: rgb(255, 167, 3);
 }
-.definicao {
+.container .definicao {
   background-color: rgb(140, 140, 140, 0.5);
   border-radius: 5px;
   padding: 10px;
+  margin: 15px;
+  display: block;
 }
-.definicao:not(:last-child) {
+.container .definicao:not(:last-child) {
   margin-bottom: 20px;
 }
-span {
+.container span {
   color: deeppink;
+}
+
+.big-container section {
+  position: relative;
 }

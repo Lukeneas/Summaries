@@ -1,16 +1,19 @@
-@media (max-width: 800px) {
-  h2 {
-    font-size: 1rem;
-  }
-  .variavel {
-    font-size: 1rem;
-  }
-  .definicao {
-    font-size: 0.8rem;
+@media (max-width: 678px) {
+  .js .big-container.active section {
+    grid-column: 1/-1;
   }
 }
-@media (max-width: 600px) {
-  .big-container {
-    grid-template-columns: 1fr;
+@media (max-width: 400px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  .container .variavel {
+    font-size: 1rem;
+  }
+  .container .definicao {
+    font-size: 0.8rem;
   }
 }
