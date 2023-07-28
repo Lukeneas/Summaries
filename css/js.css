@@ -1,0 +1,32 @@
+.js .container {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  animation: animeSec 0.5s linear;
+}
+.js .container.active {
+  display: block;
+}
+@keyframes animeSec {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.js h2.active {
+  background: #43bbd5;
+  color: white;
+  transition: 0.5s;
+}
+.js .big-container section {
+  display: none;
+  animation: animeSec 0.5s linear;
+}
+.js .big-container.active section {
+  display: block;
+}
+.js .big-container.active h1 {
+  color: white;
+}

@@ -1,0 +1,16 @@
+@media (max-width: 800px) {
+  h2 {
+    font-size: 1rem;
+  }
+  .variavel {
+    font-size: 1rem;
+  }
+  .definicao {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 600px) {
+  .big-container {
+    grid-template-columns: 1fr;
+  }
+}

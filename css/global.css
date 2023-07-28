@@ -1,0 +1,12 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  background: #43bbd5;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: poppins;
+}
