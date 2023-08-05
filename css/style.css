@@ -7,6 +7,7 @@
   top: 20px;
   border: white 4px solid;
   transition: 0.4s ease-out;
+  animation: animeBack 3s;
 }
 #avatar:hover {
   border: #00ffff 4px solid;
@@ -20,35 +21,24 @@
   gap: 10px;
   padding: 20px;
   margin: 0 auto;
-  max-width: 70vw;
+  max-width: 50vw;
   width: 90vw;
   border-radius: 5px;
-  box-sizing: border-box;
-  background: linear-gradient(
-    30deg,
-    #43bbd5,
-    #43bbd5,
-    #50dfff,
-    #50dfff,
-    #95eafd,
-    #95eafd,
-    white,
-    #95eafd,
-    #95eafd,
-    #50dfff,
-    #50dfff,
-    #43bbd5,
-    #43bbd5
-  );
-  background-size: 300%;
-  animation: animeBack 20s linear infinite;
+  background: linear-gradient(#95eafd, white);
+  animation: animeBack 3s;
+  transition: .5s ease-in-out;
+}
+.big-container:hover {
+  max-width: 70vw;
 }
 @keyframes animeBack {
   from {
-    background-position: 0;
+    opacity: 0;
+    transform: translateY(40%);
   }
   to {
-    background-position: 300%;
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
 
